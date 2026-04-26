@@ -16,9 +16,9 @@ export default function Header() {
         <header className="flex justify-between items-center px-6 py-4 bg-[#0a1d3a] text-white relative shadow-md shadow-gray-500 font-poppins fixed">
 
         <div className="flex flex-col items-center">
-            <img src={yrgnLogo} alt="logo" className="w-8 h-8" rounded-full/>
-            <p className="text-[12px] text-center">
-            JESUS REVEALED <span className="text-xl">●</span> JESUS GLORIFIED
+            <img src={yrgnLogo} alt="logo" className="w-12 h-12 rounded-full"/>
+            <p className="text-[10px] sm:text-[16px] text-center">
+            JESUS REVEALED <span className="text-sm">●</span> JESUS GLORIFIED
             </p>
         </div>
 
