@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background: linear-gradient(135deg, #0a1d3ab8, #132f5c92), url('../src/assets/prayingteens.jpg') no-repeat center;
+    background-size: cover;
+}
