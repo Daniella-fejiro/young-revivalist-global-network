@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import yrgnLogo from "../assets/yrgn-logo.jpeg"
 import {
     FaFacebookF,
     FaInstagram,
@@ -34,7 +35,7 @@ import {
                 viewport={{ once: true }}
             >
                 <div className="flex items-center gap-3 mb-5">
-                <img src="../assets/yrgn-logo.jpeg" alt="YRGN LOGO" className='w-8 h-8 rounded-full' />
+                <img src={yrgnLogo} alt="YRGN LOGO" className='w-8 h-8 rounded-full' />
                 <h2 className="font-poppins text-xl font-bold">YOUNG REVIVALIST GLOBAL NETWORK</h2>
                 </div>
                 <p className="text-[14px] font-inter text-gray-300 leading-relaxed mb-6">
