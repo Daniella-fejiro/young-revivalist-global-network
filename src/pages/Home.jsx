@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { NavLink } from "react-router-dom";
-import { FaPrayingHands, FaBookOpen, FaUsers, FaBible, FaUserFriends, FaComments, FaGlobe, FaMoon, FaUtensils, FaMapMarkerAlt, FaChurch } from "react-icons/fa"
+import { FaPrayingHands, FaBookOpen, FaUsers, FaBible, FaUserFriends, FaComments, FaGlobe, FaMoon, FaUtensils, FaMapMarkerAlt, FaChurch, FaWhatsapp } from "react-icons/fa"
 import aboutImg from '../assets/yrgn-about.jpeg'
 import Footer from "../components/Footer";
 
@@ -352,7 +352,40 @@ export default function Home() {
             </div>
 
         </section>
-        <Footer />
+
+        <section className="bg-[#0a1d3a] py-20 px-6 text-white">
+
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="max-w-3xl mx-auto text-center"
+            >
+
+                <h1 className="text-3xl md:text-5xl font-poppins font-bold mb-6">
+                Ready to join us?
+                </h1>
+
+                <p className="text-gray-300 font-inter text-base md:text-lg mb-10">
+                Become part of a growing community of young believers passionate about prayer,
+                revival, and intimacy with God. Your journey of transformation starts here.
+                </p>
+
+                <a
+                href="https://chat.whatsapp.com/F5voC9BfVFC0SI2HAlhjgT?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold px-8 py-4 rounded-full transition-transform hover:scale-105"
+                >
+                <FaWhatsapp className="text-xl" />
+                Join WhatsApp Group
+                </a>
+
+            </motion.div>
+
+            </section>
+            <Footer />
 
         </div>
     )
