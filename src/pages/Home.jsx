@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { NavLink } from "react-router-dom";
-import { FaPrayingHands, FaBookOpen, FaUsers, FaBible, FaUserFriends, FaComments, FaGlobe, FaMoon, FaUtensils } from "react-icons/fa"
+import { FaPrayingHands, FaBookOpen, FaUsers, FaBible, FaUserFriends, FaComments, FaGlobe, FaMoon, FaUtensils, FaMapMarkerAlt, FaChurch } from "react-icons/fa"
 import aboutImg from '../assets/yrgn-about.jpeg'
 import Footer from "../components/Footer";
 
@@ -71,6 +71,44 @@ const programs = [
         "A day set apart for fasting and consecration, focusing on spiritual renewal, clarity, and deeper intimacy with God."
     }
 ]
+const locations = [
+    {
+        name: "Kwale (Headquarters)",
+        type: "base",
+        description:
+        "The foundational base of YRGN where the vision was birthed and continues to serve as the spiritual headquarters of the movement.",
+    },
+    {
+        name: "Taraba",
+        type: "branch",
+        description:
+        "A growing expression of revival flowing from the Kwale base, raising young believers in prayer and the Word.",
+    },
+    {
+        name: "Agbor (UNIDEL)",
+        type: "branch",
+        description:
+        "A campus-based fellowship extension of the Kwale vision, impacting students with revival fire.",
+    },
+    {
+        name: "Anambra (UNIZIK)",
+        type: "branch",
+        description:
+        "A thriving campus expression connected to the Kwale base, focused on discipleship and spiritual growth.",
+    },
+    {
+        name: "Ozoro (SDU)",
+        type: "branch",
+        description:
+        "A revival hub growing from the Kwale foundation, raising committed believers.",
+    },
+    {
+        name: "Abuja",
+        type: "branch",
+        description:
+        "A strategic expansion point of the Kwale vision, representing national reach and influence.",
+    },
+];
 export default function Home() {
     return (
         <div className="home">
@@ -262,7 +300,58 @@ export default function Home() {
 
             </div>
         </section>
+        <section className="bg-white py-20 px-6">
 
+            <h1 className="text-3xl md:text-4xl font-poppins font-bold text-[#0a1d3a] text-center mb-10">
+                Our Locations & Reach
+            </h1>
+
+            {/* HUB (KWALE) */}
+            <div className="max-w-3xl mx-auto mb-12 text-center">
+
+                <div className="inline-flex items-center gap-2 text-[#0a1d3a] font-bold text-xl">
+                <FaChurch className="text-[#f4c430]" />
+                Kwale (Headquarters)
+                </div>
+
+                <p className="text-gray-700 font-inter mt-3 leading-relaxed">
+                The foundational base of YRGN where the vision was birthed and continues
+                to serve as the spiritual headquarters of the movement.
+                </p>
+
+                <div className="mt-4 h-1 w-20 bg-[#f4c430] mx-auto rounded-full" />
+            </div>
+
+            {/* BRANCHES */}
+            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                {locations
+                .filter((loc) => loc.type === "branch")
+                .map((loc, index) => (
+                    <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+                    >
+                    <div className="flex items-center gap-2 mb-3 text-[#0a1d3a]">
+                        <FaMapMarkerAlt className="text-[#f4c430]" />
+                        <h2 className="font-poppins font-semibold text-lg">
+                        {loc.name}
+                        </h2>
+                    </div>
+
+                    <p className="text-gray-700 font-inter text-sm leading-relaxed">
+                        {loc.description}
+                    </p>
+                    </motion.div>
+                ))}
+
+            </div>
+
+        </section>
         <Footer />
 
         </div>

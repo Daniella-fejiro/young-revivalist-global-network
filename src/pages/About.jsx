@@ -274,7 +274,7 @@ export default function About(){
                         </h2>
                     </div>
 
-                    <p className="text-gray-700 text-lg font-inter leading-relaxed mb-3">
+                    <p className="text-gray-700 font-inter leading-relaxed mb-3">
                         {visionMission.mission}
                     </p>
 
@@ -298,7 +298,7 @@ export default function About(){
                         </h2>
                     </div>
 
-                    <p className="text-gray-700 font-inter  leading-relaxed mb-3">
+                    <p className="text-gray-700 font-inter leading-relaxed mb-3">
                         {visionMission.corePurpose}
                     </p>
 
