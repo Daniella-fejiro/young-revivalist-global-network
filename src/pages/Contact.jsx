@@ -28,7 +28,7 @@ return (
                 </h2>
 
                 <a
-                href="https://wa.me/081389254416"
+                href="https://wa.me/+23481389254416"
                 target="_blank"
                 className="flex items-center gap-3 border p-4 rounded-lg hover:bg-gray-50 transition"
                 >
