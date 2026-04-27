@@ -25,7 +25,6 @@ export default function Header() {
         <nav className="hidden md:flex gap-6">
             <NavLink to="/" className={linkClass}>Home</NavLink>
             <NavLink to="/about" className={linkClass}>About</NavLink>
-            <NavLink to="/gallery" className={linkClass}>Gallery</NavLink>
             <NavLink to="/join" className={linkClass}>Join</NavLink>
             <NavLink to="/contact" className={linkClass}>Contact</NavLink>
         </nav>

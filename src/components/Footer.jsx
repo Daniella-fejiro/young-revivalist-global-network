@@ -24,7 +24,6 @@ import {
     const quickLinks = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
-        { name: 'Gallery', path: '/gallery' },
         { name: 'Join Us', path: '/join' },
         { name: 'Contact', path: '/contact' },
 ];
