@@ -196,7 +196,7 @@ export default function About(){
                     </p>
 
                     <p className="text-gray-700 font-inter leading-relaxed">
-                        Follow His Accouts below to Follow His Daily Podcasts "Wisdom For Daily Living".
+                        Follow his official platforms below to stay connected and be blessed by his daily podcast, Wisdom For Daily Living.
                     </p>
 
                     {/* SOCIALS */}
