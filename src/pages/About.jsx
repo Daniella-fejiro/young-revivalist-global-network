@@ -245,16 +245,16 @@ export default function About(){
                     >
                     <div className="flex items-center gap-3 mb-3 text-[#0a1d3a]">
                         <FaCross className="text-xl" />
-                        <h2 className="font-poppins font-semibold text-2xl">
+                        <h2 className="font-poppins font-semibold text-xl">
                         Vision
                         </h2>
                     </div>
 
-                    <p className="text-gray-700 font-inter text-xl leading-relaxed mb-3">
+                    <p className="text-gray-700 font-inter text-lg leading-relaxed mb-3">
                         {visionMission.vision}
                     </p>
 
-                    <p className="text-lg text-[#f4c430] font-semibold">
+                    <p className="text-md text-[#f4c430] font-semibold">
                         {visionMission.visionScripture}
                     </p>
                     </motion.div>
@@ -269,16 +269,16 @@ export default function About(){
                     >
                     <div className="flex items-center gap-3 mb-3 text-[#0a1d3a]">
                         <FaCross className="text-xl" />
-                        <h2 className="font-poppins font-semibold text-2xl">
+                        <h2 className="font-poppins font-semibold text-xl">
                         Mission
                         </h2>
                     </div>
 
-                    <p className="text-gray-700 text-xl font-inter leading-relaxed mb-3">
+                    <p className="text-gray-700 text-lg font-inter leading-relaxed mb-3">
                         {visionMission.mission}
                     </p>
 
-                    <p className="text-lg text-[#f4c430] font-semibold">
+                    <p className="text-md text-[#f4c430] font-semibold">
                         {visionMission.missionScripture}
                     </p>
                     </motion.div>
@@ -293,12 +293,12 @@ export default function About(){
                     >
                     <div className="flex items-center gap-3 mb-3 text-[#0a1d3a]">
                         <FaLightbulb className="text-xl" />
-                        <h2 className="font-poppins font-semibold text-2xl">
+                        <h2 className="font-poppins font-semibold text-xl">
                         Core Purpose
                         </h2>
                     </div>
 
-                    <p className="text-gray-700 font-inter text-xl leading-relaxed mb-3">
+                    <p className="text-gray-700 font-inter text-lg leading-relaxed mb-3">
                         {visionMission.corePurpose}
                     </p>
 
@@ -319,17 +319,17 @@ export default function About(){
                     >
                     <div className="flex items-center gap-3 mb-4">
                         <FaBullseye className="text-[#0a1d3a]" />
-                        <h2 className="font-poppins text-[#0a1d3a] font-semibold text-2xl">
+                        <h2 className="font-poppins text-[#0a1d3a] font-semibold text-xl">
                         Motto
                         </h2>
                     </div>
 
-                    <p className="font-inter text-xl text-[#0a1d3a] mb-6">
+                    <p className="font-inter text-lg text-[#0a1d3a] mb-6">
                         {visionMission.motto}
                     </p>
 
                     <div className="border-t border-gray-600 pt-4 font-montserrat">
-                        <p className="text-[#f4c430] font-semibold text-xl">
+                        <p className="text-[#f4c430] font-semibold text-lg">
                         {visionMission.declaration}
                         </p>
                     </div>
