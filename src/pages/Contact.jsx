@@ -28,7 +28,7 @@ return (
                 </h2>
 
                 <a
-                href="https://wa.me/+23481389254416"
+                href="https://wa.me/23481389254416?text=Hello%20I%20would%20like%20to%20connect%20with%20YRGN"
                 target="_blank"
                 className="flex items-center gap-3 border p-4 rounded-lg hover:bg-gray-50 transition"
                 >
