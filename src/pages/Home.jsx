@@ -121,7 +121,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-2xl md:text-5xl font-extrabold text-center leading-tight"
             >
-            A <span className="text-[#f4c430]">Community</span> Of Young <br />
+            <span className="text-[#f4c430]">Community</span> Of Young <br />
             <span className="text-[#f4c430]">Believers</span> Growing In Prayer
             </motion.h1>
 
