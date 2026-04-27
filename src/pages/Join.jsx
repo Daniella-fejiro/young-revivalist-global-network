@@ -9,8 +9,8 @@ export default function Join(){
     return(
         <div>
             <PagesHero 
-                title={"JOIN YRGN"}
-                subtitle={"Be a Part of a Vibriant Community Today"}
+                title={"JOIN THE MOVEMENT"}
+                subtitle={"Be part of a generation awakened for revival, purpose, and kingdom impact."}
                 backgroundImage={picture}/>
 
             <div className="bg-white px-6 py-16 space-y-20">
@@ -33,7 +33,7 @@ export default function Join(){
                     </p>
 
                     <a
-                    href="https://wa.me/YOUR_NUMBER"
+                    href="https://chat.whatsapp.com/F5voC9BfVFC0SI2HAlhjgT?mode=gi_t"
                     target="_blank"
                     className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition"
                     >

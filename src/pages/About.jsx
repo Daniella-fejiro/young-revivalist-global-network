@@ -62,8 +62,8 @@ export default function About(){
     return(
         <div>
             <PagesHero 
-                title={"ABOUT"}
-                subtitle={"Get To Know More About Us"}
+                title={"ABOUT YRGN"}
+                subtitle={"Discover our story, our mission, and the vision driving a generation of revivalists."}
                 backgroundImage={picture}/>
 
             <section className="bg-white py-20 px-6">
