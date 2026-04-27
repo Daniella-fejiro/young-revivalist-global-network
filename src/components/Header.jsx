@@ -13,12 +13,12 @@ export default function Header() {
         : "hover:scale-105 font-montserrat"
 
     return (
-        <header className="flex justify-between items-center px-6 py-4 bg-[#0a1d3a] text-white relative shadow-md shadow-gray-500 font-poppins fixed">
+        <header className="flex justify-between items-center px-6 py-4 bg-[#0a1d3a] text-white relative shadow-md shadow-gray-500 font-poppins fixed t0p-0 right-0 z-[60]">
 
         <div className="flex flex-col items-center">
             <img src={yrgnLogo} alt="logo" className="w-12 h-12 rounded-full"/>
             <p className="text-[10px] sm:text-[16px] text-center">
-            JESUS REVEALED <span className="text-sm">●</span> JESUS GLORIFIED
+            JESUS REVEALED <span className="text-[8px] md:text-[18px]">●</span> JESUS GLORIFIED
             </p>
         </div>
 
