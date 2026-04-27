@@ -1,5 +1,6 @@
 import PagesHero from "../components/PagesHero";
 import picture from "../assets/prayingteens.jpg"
+import Footer from "../components/Footer";
 
 
 export default function Gallery(){
@@ -10,6 +11,8 @@ export default function Gallery(){
                 title={"OUR GALLERY"}
                 subtitle={"View Our Past Events"}
                 backgroundImage={picture}/>
+
+            <Footer />
         </div>
     )
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { NavLink } from "react-router-dom";
 import { FaPrayingHands, FaBookOpen, FaUsers, FaBible, FaUserFriends, FaComments, FaGlobe, FaMoon, FaUtensils } from "react-icons/fa"
 import aboutImg from '../assets/yrgn-about.jpeg'
 import Footer from "../components/Footer";
@@ -108,11 +109,13 @@ export default function Home() {
                 </button>
             </a>
             
-
-            <button className="flex items-center gap-2 border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-                <FaBookOpen />
-                Learn More
-            </button>
+            <NavLink to={'/about'}>
+                <button className="flex items-center gap-2 border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+                    <FaBookOpen />
+                    Learn More
+                </button>
+            </NavLink>
+            
 
             </motion.div>
 

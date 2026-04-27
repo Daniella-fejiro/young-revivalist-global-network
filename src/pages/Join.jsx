@@ -1,4 +1,4 @@
-
+import Footer from "../components/Footer"
 import picture from "../assets/prayingteens.jpg"
 import PagesHero from "../components/PagesHero"
 
@@ -11,6 +11,8 @@ export default function Join(){
                 title={"JOIN YRGN"}
                 subtitle={"Be a Part of a Vibriant Community Today"}
                 backgroundImage={picture}/>
+
+            <Footer />
         </div>
     )
     

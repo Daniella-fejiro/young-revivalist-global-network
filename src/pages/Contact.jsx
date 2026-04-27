@@ -1,5 +1,6 @@
 import PagesHero from "../components/PagesHero";
 import picture from "../assets/prayingteens.jpg"
+import Footer from "../components/Footer";
 
 
 export default function Contact(){
@@ -10,6 +11,9 @@ export default function Contact(){
                 title={"CONTACT US"}
                 subtitle={"Get In Touch Today"}
                 backgroundImage={picture}/>
+
+
+            <Footer />
         </div>
     )
     

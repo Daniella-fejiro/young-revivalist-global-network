@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 import yrgnLogo from "../assets/yrgn-logo.jpeg"
 import {
     FaFacebookF,
@@ -20,7 +21,13 @@ import {
         { icon: <FaTiktok />, href: 'https://www.tiktok.com/@sirwealthezimadu?_r=1&_t=ZS-95pUgfAlBUS', label: 'TikTok' },
     ];
 
-    const quickLinks = ['Home', 'About', 'Gallery', 'Join', 'Contact'];
+    const quickLinks = [
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Gallery', path: '/gallery' },
+        { name: 'Join Us', path: '/join' },
+        { name: 'Contact', path: '/contact' },
+];
 
     return (
         <footer className="bg-[#0a1d3a] text-white relative overflow-hidden">
@@ -67,22 +74,22 @@ import {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-            >
+                >
                 <h3 className="font-poppins text-xl font-semibold mb-6 text-[#f4c430]">
-                Quick Links
+                    Quick Links
                 </h3>
-                <ul className="space-y-4">
-                {quickLinks.map((link, index) => (
-                    <li key={index}>
-                    <a
-                        href="#"
-                        className="font-inter text-gray-300 hover:text-white transition-colors duration-300"
+
+                <div className="flex flex-col space-y-3">
+                    {quickLinks.map((link) => (
+                    <NavLink
+                        key={link.name}
+                        to={link.path}
+                        className="font-inter text-gray-300 hover:text-[#f4c430] transition-colors duration-300"
                     >
-                        {link}
-                    </a>
-                    </li>
-                ))}
-                </ul>
+                        {link.name}
+                    </NavLink>
+                    ))}
+                </div>
             </motion.div>
 
             <motion.div
