@@ -76,7 +76,7 @@ export default function About(){
                     viewport={{ once: true }}
                     className="text-3xl md:text-4xl font-poppins font-bold text-[#0a1d3a] text-center mb-12"
                 >
-                    About YRGN
+                    The YRGN Story
                 </motion.h1>
 
                 {/* CONTENT */}
