@@ -55,7 +55,6 @@ export default function Header() {
                 >
                 <NavLink onClick={() => setOpen(false)} to="/" className={linkClass}>Home</NavLink>
                 <NavLink onClick={() => setOpen(false)} to="/about" className={linkClass}>About</NavLink>
-                <NavLink onClick={() => setOpen(false)} to="/gallery" className={linkClass}>Gallery</NavLink>
                 <NavLink onClick={() => setOpen(false)} to="/join" className={linkClass}>Join</NavLink>
                 <NavLink onClick={() => setOpen(false)} to="/contact" className={linkClass}>Contact</NavLink>
                 </motion.div>
